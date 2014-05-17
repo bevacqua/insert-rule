@@ -1,6 +1,6 @@
 /**
  * insert-rule - Insert rules into a stylesheet programatically with a simple API
- * @version v1.3.3
+ * @version v1.3.4
  * @link https://github.com/bevacqua/insert-rule
  * @license MIT
  */
