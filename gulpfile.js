@@ -36,8 +36,8 @@ gulp.task('clean', function () {
 gulp.task('build', ['clean', 'bump'], function () {
   var pkg = require('./package.json');
 
-  return browserify('./src/insert-rule.js')
-    .bundle({ debug: true, standalone: 'insert-rule' })
+  return browserify('./src/insertRule.js')
+    .bundle({ debug: true, standalone: 'insertRule' })
     .pipe(source('insert-rule.js'))
     .pipe(streamify(header(extended, { pkg : pkg } )))
     .pipe(gulp.dest('./dist'))
