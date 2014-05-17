@@ -28,7 +28,7 @@ insertRule('body:after', 'font-weight: bold;');
 
 ```js
 insertRule('body:after', {
-  content: 'Ha-ha!',
+  content: '"Ha-ha!"',
   display: 'block',
   fontSize: '16px'
 });
