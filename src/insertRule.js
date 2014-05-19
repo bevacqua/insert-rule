@@ -18,6 +18,7 @@ function parseStyles (styles) {
     return prop + ':' + styles[key];
   }).join(';');
 }
+
 module.exports = function (selector, styles) {
   var css = parseStyles(styles);
   var sheet = document.styleSheets[document.styleSheets.length - 1];
