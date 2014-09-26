@@ -1,3 +1,10 @@
+# v2.0.0
+
+- Create and use a single isolated `<style>` element
+- Introduced a `.context` API method to create dedicated `<style>` elements
+- Added a `.clear` API method to remove inserted style rules
+- The `.remove` API method can be used to remove style rules by selector
+
 # v1.1.0
 
 - Colors get copied from the `<textarea>`

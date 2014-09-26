@@ -34,6 +34,36 @@ insertRule('body:after', {
 });
 ```
 
+You can also remove all of the previously inserted rules.
+
+# `insertRule.clear()`
+
+Only those inserted by the `insert-rule` module will be affected.
+
+# `insertRule.remove(selector)`
+
+Removes style rules that were created using exactly the provided selector.
+
+# `insertRule.context(name)`
+
+You can create a "context" that's self-contained, where rules will be added to a different style element. In this case, `clear()` removes all of the rules in the given context, and `.remove(selector)` only removes those rules matching the selector from the current context.
+
+```js
+var foo = insertRule.context('foo');
+var bar = insertRule.context('bar');
+foo('#foo', 'color:#f00');
+bar.remove('#foo'); // nothing happens
+foo.remove('#foo'); // rule gets removed!
+```
+
+This separation of concerns is most useful when using `insert-rule` in _"small-module"_ type environments.
+
+##### Example
+
+```js
+insertRule.clear();
+```
+
 # License
 
 MIT
