@@ -1,4 +1,4 @@
-# v2.0.0
+# v2.1.0
 
 - Create and use a single isolated `<style>` element
 - Introduced a `.context` API method to create dedicated `<style>` elements
